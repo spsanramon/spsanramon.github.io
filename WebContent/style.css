@@ -21,11 +21,21 @@ img {
 
 .container {
 	width: 95%;
+	max-width: 70em;
 	margin: 0 auto;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 1.7rem;
+	margin-top: 0;
 }
 
 .title {
 	font-size: 2.5rem;
+	margin-bottom: 1.5;
+	font-weight: 900;
+	margin-top: 1em;
 }
 
 .title span {
@@ -91,9 +101,10 @@ nav a:hover, nav a:focus {
 	color: #B21472;
 }
 
-@media ( min-width :60rem) {
+@media ( min-width : 60rem) {
 	.logo {
 		float: left;
+		margin: 3px;
 	}
 	nav {
 		float: right;
@@ -102,7 +113,8 @@ nav a:hover, nav a:focus {
 
 /* home-home */
 .home-hero {
-	backround-image: url("../img/hira-bg.jpg");
+	/* 	backround-image: url("../img/hira-bg.jpg");*/
+	background-image: linear-gradient(#BBE0FF, #D674DB);
 	backround-size: cover;
 	backround-position: center;
 	padding: 10em 0;
@@ -112,5 +124,66 @@ nav a:hover, nav a:focus {
 	.home-hero {
 		height: 100vh;
 		padding-top: 35vh;
+	}
+}
+
+.home-about-textbox {
+	background-color: #BBE0FF;
+	padding: 4em;
+	width: 100vw;
+	margin-left: -2.5%;
+	outline: 2px solid #D674DB;
+	outline-offset: -2.5em;
+	color: #FFF;
+	position: relative;
+}
+
+.home-about-textbox h1 {
+	color: #D674DB;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: .75em;
+	background: #BBE0FF;
+	padding: 0 .145em;
+}
+
+@media ( min-width : 25rem) {
+	h1 {
+		font-size: 2rem;
+	}
+	.home-about-textbox {
+		padding: 5.5em;
+	}
+	.home-about-textbox h1 {
+		top: .6em;
+		padding: 0 .325em;
+	}
+}
+
+@media ( min-width : 60rem) {
+	h1 {
+		font-size: 2.5rem;
+	}
+	.home-about {
+		background-image: url(../img/STEMgirl.png);
+		background-repeat: no-repeat;
+		padding-bottom: 8em;	
+		width:100vw;	
+	}
+	.home-about-textbox {
+		width: 50%;
+		padding: 6em;
+		outline-offset: -3.75em;
+		margin-left: -2.5%;
+		top: -6em;
+		text-align: left;
+		box-shadow: 0 0 4em 0 rgba(0, 0, 0, .3);
+		margin-left: 5%;
+	}
+	.home-about-textbox h1 {
+		top: .75em;
+		left: 6rem;
+		transform: translateX(0);
 	}
 }
