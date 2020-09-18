@@ -168,7 +168,7 @@ nav a:hover, nav a:focus {
 	.home-about {
 		background-image: url(../img/STEMgirl.png);
 		background-repeat: no-repeat;
-	    backround-position: center;
+		padding-bottom: 8em;		
 	}
 	.home-about-textbox {
 		width: 60%;
@@ -178,7 +178,6 @@ nav a:hover, nav a:focus {
 		top: -6em;
 		text-align: left;
 		box-shadow: 0 0 4em 0 rgba(0, 0, 0, .3);
-		
 	}
 	.home-about-textbox h1 {
 		top: .75em;
